@@ -9,6 +9,9 @@ const squareRoot = document.querySelector("#sqrt")
 const arr = []
 const operators = ["%", "+", "-", "*", "/"]
 
+const blinker = document.createElement('span')
+blinker.classList.add('blinker')
+
 inputValues.forEach(item => {
     // console.log(item.getAttribute('data-value'))
     item.addEventListener("click", () =>{
@@ -49,7 +52,8 @@ allClear.addEventListener("click", ()=>{
 })
 
 squareRoot.addEventListener("click", () =>{
-    
+    const squareRt = Math.sqrt(outputField.innerHTML);
+    outputField.innerHTML= squareRt 
 })
 
 

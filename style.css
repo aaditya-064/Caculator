@@ -76,6 +76,24 @@
     /* position: absolute; */
     /* align-items: center; */
     /* width: 360px; */
-    transform: rotate(90);
 
+
+}
+.blinker{
+    /* animation: blinker infinite 0.9s; */
+    animation: blinker 1s linear infinite;
+    position: relative;
+    top: -5px;
+}
+
+@keyframes blinker {
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
 }
