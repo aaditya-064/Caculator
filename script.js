@@ -3,6 +3,7 @@ const outputField = document.querySelector("#result");
 const equalTo = document.querySelector("#equal");
 const allClear = document.querySelector("#all_clear");
 const clearButton = document.querySelector("#clear");
+const squareRoot = document.querySelector("#sqrt")
 
 
 const arr = []
@@ -47,6 +48,10 @@ allClear.addEventListener("click", ()=>{
     // console.log('hll')
 })
 
+squareRoot.addEventListener("click", () =>{
+    
+})
+
 
 
 function calculate(){
@@ -54,5 +59,6 @@ function calculate(){
     const evaluatedResult = eval(val)
     outputField.innerHTML= evaluatedResult
 }
+
 
 
