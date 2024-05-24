@@ -4,96 +4,98 @@
     box-sizing: border-box;
 }
 
-.main_div{
+
+body{
+    min-height: 100vh;
     /* background: orange; */
-    position: relative;
-    width: 1000px;
-    height: 100vh;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.main_div #inputValue {
-    
-    /* margin-top: 10px; */
-    /* position: absolute; */
-    top: 51%;
+.main_div.container{
+    max-width: 380px;
+    margin: auto;
+}
+
+.main_div{
+    position: relative;
+    top: 20px;
+    /* border-radius: 10px; */
+    /* border: 2px solid white; */
+    border-radius: 50px;
+    min-height: 90vh;
     background: black;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-top: 7px solid white;
-    gap: 15px
-    /* width: 1000px; */
-    /* font-size: 30px; */
+    /* border-bottom: 5px solid yellow; */
+    
 }
 
 .sub_div{
-    /* background: green; */
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* padding: 20px; */
-    max-width: 900px;
     margin: auto;
-
+    /* background: orange; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
-.main_div #inputValue button{
-    width: 90px;
-    height: 90px;
+#operatingArea {
+    height: 150px;
+    position: relative;
+}
+
+#result{
+    position: absolute;
+    top: 95%;
+    right: 7%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+
+#inputValue{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#inputValue button{
+    height: 80px;
+    width: 80px;    
     border-radius: 50%;
-    border: 2px solid white;
-    display: flex;      
+    border: 0;
+    font-size: 25px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-}
-
-
-
-.main_div #operatingArea p{
-    /* position: absolute; */
-    background: black;
+    background-color: #333333;
     color: white;
-    padding: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 130px;
-    display: flex;
-    font-size: 50px;
-    justify-content: right;
-    /* position: absolute; */
-    /* align-items: center; */
-    /* width: 360px; */
-
-
-}
-.blinker{
-    /* animation: blinker infinite 0.9s; */
-    animation: blinker 1s linear infinite;
-    position: relative;
-    top: -5px;
 }
 
-@keyframes blinker {
-    25%{
-        opacity: 0.5;
-    }
-    50%{
-        opacity: 0;
-    }
-    75%{
-        opacity: 0.5;
-    }
+
+#inputValue button:nth-child(1),
+#inputValue button:nth-child(2),
+#inputValue button:nth-child(3)
+{
+    background: #D4D4D2;
+    color: black;
 }
+
+#inputValue button:nth-child(4),
+#inputValue button:nth-child(8),
+#inputValue button:nth-child(12),
+#inputValue button:nth-child(16),
+#inputValue button:nth-child(20){
+    background: #F1A33C;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+

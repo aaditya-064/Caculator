@@ -65,4 +65,15 @@ function calculate(){
 }
 
 
+// const a = [1, 2, 3,5]
+// const stringA = JSON.stringify(a)
 
+// localStorage.setItem('array_data', stringA)
+
+// //to get
+// const getArrayData = localStorage.getItem('array_data')
+// const parseArrayData = JSON.parse(getArrayData)
+
+// console.log(parseArrayData)
+
+// localStorage.removeItem("key_name")
